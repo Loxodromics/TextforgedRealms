@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text-Based Adventure Game</title>
+    <link rel="stylesheet" href="../static/style.css">
+</head>
+<body>
+    <header>
+        <h1 id="adventure-title">Adventure Title</h1>
+    </header>
+    <main>
+        <div id="story-container" class="scrollable">
+            <textarea id="story-text" readonly>The story will be displayed here...</textarea>
+        </div>
+        <div id="controls-container">
+			<div id="user-input-container" class="control-placeholder">
+				<input type="text" id="user-prompt" placeholder="Enter your command">
+				<button id="send-button">Send</button>
+			</div>
+			<div id="choices-container" class="control-placeholder">
+				<div class="choices-grid">
+					<button class="choice-button" id="choice-1" disabled>Choice 1</button>
+					<button class="choice-button" id="choice-2" disabled>Choice 2</button>
+					<button class="choice-button" id="choice-3" disabled>Choice 3</button>
+					<button class="choice-button" id="choice-4" disabled>Choice 4</button>
+				</div>
+			</div>
+            <div id="dice-container" class="control-placeholder">
+				<div class="dice-row">
+					<button class="dice-button" id="roll-d6" disabled>Roll D6</button>
+					<input type="text" class="dice-result" id="result-d6" readonly>
+				</div>
+				<div class="dice-row">
+					<button class="dice-button" id="roll-d12" disabled>Roll D12</button>
+					<input type="text" class="dice-result" id="result-d12" readonly>
+				</div>
+				<div class="dice-row">
+					<button class="dice-button" id="roll-d20" disabled>Roll D20</button>
+					<input type="text" class="dice-result" id="result-d20" readonly>
+				</div>
+			</div>
+        </div>
+    </main>
+    <script src="../static/scripts.js"></script>
+</body>
+</html>

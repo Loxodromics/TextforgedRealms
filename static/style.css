@@ -1,0 +1,117 @@
+body {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* body {
+    display: flex;
+    height: 100vh;
+    margin: 0;
+    font-family: Arial, sans-serif;
+} */
+
+#story-text {
+    width: 100%;
+    height: 100%;
+    font-size: 18px;
+    resize: none;
+    border: 1px solid #ccc;
+    overflow-y: auto;
+}
+
+header {
+    background-color: #333;
+    padding: 10px;
+}
+
+h1 {
+    color: #fff;
+    margin: 0;
+    text-align: center;
+}
+
+#story-container {
+    flex-grow: 1;
+    width: 90%; /* Adjust this value for the desired width */
+    max-height: 80%;
+    margin: 20px auto;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.controls-container {
+    display: flex;
+    flex-direction: column;
+    margin: 20px 20px 20px 0;
+}
+
+.control-placeholder {
+    background-color: #ccc;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    user-select: none;
+}
+
+.control-placeholder:hover {
+    background-color: #999;
+}
+
+.scrollable::-webkit-scrollbar {
+    width: 10px;
+}
+
+.scrollable::-webkit-scrollbar-thumb {
+    background-color: #ccc;
+    border-radius: 5px;
+}
+
+/* Add the following styles for the choices grid and buttons */
+.choices-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+}
+
+.choice-button {
+    background-color: #007bff;
+    color: #fff;
+    padding: 20px;
+    font-size: 1.1em;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    user-select: none;
+    width: 100%;
+}
+
+.choice-button:disabled {
+    background-color: #ccc;
+    color: #999;
+    cursor: not-allowed;
+}
+
+.dice-row {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.dice-button {
+    background-color: #28a745;
+    color: #fff;
+    padding: 10px;
+    font-size: 1em;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    user-select: none;
+}
+
+.dice-result {
+    width: 50px;
+}
